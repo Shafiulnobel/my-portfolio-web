@@ -1,0 +1,54 @@
+/* *{
+    overflow: hidden;
+}  */
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+section{
+    background-color: black;
+}
+.vl {
+    border-left: 6px solid green;
+    height: 150px;
+  }
+  .link a{
+    display: inline-block;
+    transition: all .3s ease-in-out;
+  }
+ .link a:hover{
+    
+    transform: scale(1.1);
+     
+  }
+
+  @media (max-width: 767px) {
+		.carousel-inner .carousel-item > div {
+			display: none;
+		}
+		.carousel-inner .carousel-item > div:first-child {
+			display: block;
+		}
+	}
+
+	.carousel-inner .carousel-item.active,
+	.carousel-inner .carousel-item-next,
+	.carousel-inner .carousel-item-prev {
+		display: flex;
+	}
+
+	/* medium and up screens */
+	@media (min-width: 768px) {
+
+		.carousel-inner .carousel-item-end.active,
+		.carousel-inner .carousel-item-next {
+			transform: translateX(25%);
+		}
+
+		.carousel-inner .carousel-item-start.active, 
+		.carousel-inner .carousel-item-prev {
+			transform: translateX(-25%);
+		}
+	}
+
+	.carousel-inner .carousel-item-end,
+	.carousel-inner .carousel-item-start { 
+		transform: translateX(0);
+	}

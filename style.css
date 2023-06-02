@@ -24,13 +24,15 @@ main{
     transform: scale(1.1);
      
   }
-
+.thumbnail{
+	overflow: hidden;
+}
   .thumbnail-inside{
 	display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-	overflow: hidden;
+	
   }
   .box{
 	position: relative;
